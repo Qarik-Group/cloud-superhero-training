@@ -34,6 +34,9 @@ interacts with cloud infrastructures to provision and de-provision cloud servers
 >
 >Some teams put their BOSH environment behind an API, such as the Open Service Broker API, and dynamically provision and de-provision entire systems on demand. For example, [Pivotal Container Services](https://pivotal.io/platform/pivotal-container-service) is an API driven system to deploy entire Kubernetes clusters, all using BOSH.
 
+![Bespoke => Custom Built](../../images/bespoke_notice.png "Bespoke => Custom Built")
+
+
 ## About The Labs
 To recap, a BOSH environment is designed to manage resources, run services, oversee lifecycle within a Cloud. The heavy lifting is done by a special machine called the BOSH Director which is managed by sending commands from the `bosh` cli.
 
