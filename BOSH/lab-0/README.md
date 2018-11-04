@@ -81,7 +81,7 @@ Try your hand at creating three commands that set these two variables and then l
     export BOSH_CLIENT_SECRET=$(bosh int ~/creds.yml --path /admin_password)
     bosh -e training login
 
-</details>
+</details><br/>
 
 If you add these commands to your ~/.bash_profile on the jumpbox you'll automatically be logged in when you start your session.
 
