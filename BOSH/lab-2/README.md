@@ -26,10 +26,10 @@ The stemcell represents the base operating system image used to run all of the s
 Each deployment documents the contents and arrangement for a release in a manifest yaml file. This file should be located in the root directory of the release. Here is a [sample file](https://gist.github.com/Bunter/f393c614f2f93ae8e83cb18fa01cb4ca) for this lab:
 
 ```yaml
-name: nginx
+name: nginx-<user_name>
 
 releases:
-- name: nginx
+- name: nginx-<user_name>
   version: latest
 
 stemcells:
@@ -43,7 +43,7 @@ instance_groups:
   azs: [z1]
   jobs:
   - name: nginx
-    release: nginx
+    release: nginx-<user_name>
   vm_type: small
   stemcell: default
   networks:
