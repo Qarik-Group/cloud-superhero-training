@@ -79,7 +79,7 @@ At compile time, BOSH takes the source files referenced in the package specs, an
     
 We can create a package skeleton using the `bosh generate-package <dependency_name>` command using ‘nginx’ as the dependency_name.
     
-We tell BOSH about this dependency in the "spec" file in the "packages/nginx" directory. Here is a [sample spec file](https://gist.github.com/Bunter/378ed9c9ef9b7362a7dab97f8e3956a1) we can view, and use for this lab:
+We tell BOSH about this dependency in the "spec" file in the `packages/nginx` directory. Here is a [sample spec file](https://gist.github.com/Bunter/378ed9c9ef9b7362a7dab97f8e3956a1) we can view, and use for this lab:
 
 ```yaml
 name: nginx
@@ -116,7 +116,7 @@ We must edit our skeleton file to include this bash script. Note that each compi
 #### Jobs (describing the runtime configuration of your compiled binaries)
 For each job, we create a job skeleton using the `bosh generate-job <job_name>` command, of course using best practices, our job_name should also be "nginx"
     
-Jobs are made up of control scripts, monit files, and spec files. The generate-job command that we just used should have created these skeleton files in our ‘jobs/nginx’ directory
+Jobs are made up of control scripts, monit files, and spec files. The generate-job command that we just used should have created these skeleton files in our `jobs/nginx` directory
 
 ###### Control Scripts    
 Every job needs a way to start and stop in a controlled manner. Control scripts are responsible for doing this through an embedded ruby file.
@@ -144,7 +144,7 @@ esac
 ###### Monit
 Monit is a free, open source process supervision tool which provides BOSH with its first defence against unwanted downtime. The monit daemon executes the commands in our control script to monitor our job at runtime through a monit file
     
-We need to edit our monit file, in the "jobs/nginx" directory to let BOSH know how to use our control scripts. Here is a [sample monit file](https://gist.github.com/Bunter/8377784f4e24c500201bd5fe45515eb4) we can look at and use for this lab:
+We need to edit our monit file, in the `jobs/nginx` directory to let BOSH know how to use our control scripts. Here is a [sample monit file](https://gist.github.com/Bunter/8377784f4e24c500201bd5fe45515eb4) we can look at and use for this lab:
 
 ```monit
 check process nginx
