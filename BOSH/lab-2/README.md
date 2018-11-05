@@ -79,7 +79,7 @@ So let’s deploy our release!
 
         bosh -e [environment] --deployment nginx ssh nginx --command "curl localhost"
 
-## Modifying our BOSH Release (Updating 
+## Modifying our BOSH Release
 Any time we make an update to the manifest, we will redeploy the release. Let’s test out how this works by upgrading the number of instances we deploy our release to.
 
 1. In the manifest yaml, in the "instance_groups" block, let’s change the number of "instances" from 1 to 2.
