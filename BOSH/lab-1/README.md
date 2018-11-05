@@ -121,7 +121,7 @@ Jobs are made up of control scripts, monit files, and spec files. The generate-j
 ###### Control Scripts    
 Every job needs a way to start and stop in a controlled manner. Control scripts are responsible for doing this through an embedded ruby file.
 
-Let’s create one for our job named "ctl.erb" in the "jobs/nginx/templates" directory. Here is a [sample control script](https://gist.github.com/Bunter/07445263e9cb666f30b49c387ceef23d) we can use:
+Let’s create one for our job named `ctl.erb` in the "jobs/nginx/templates" directory. Here is a [sample control script](https://gist.github.com/Bunter/07445263e9cb666f30b49c387ceef23d) we can use:
 
 ```bash
 #!/bin/bash -e
