@@ -2,8 +2,9 @@
 ### Objectives:
 At the completion of this lab the student will be able to answer the following questions:
 
--   How do you deploy that bosh release to AWS?
--   What is a BOSH director, stemcell, and deployment manifest?
+- How do you deploy a bosh release to AWS?
+- What is a BOSH director, stemcell, and deployment manifest?
+- How do you modify an existing deployment?
 
 ## Deploying our First BOSH Release:
 Now that we have successfully used the BOSH CLI to codify the structure of all of the parts of our release, we need to take that code structure and turn it into infrastructure. BOSH uses a server-side component known as the BOSH director which handles that translation.
