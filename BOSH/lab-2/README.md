@@ -15,7 +15,7 @@ For this lab, we have pre-provisioned a BOSH director for us to use so that we c
 
 #### Upload nginx release
 1. Make sure we are in the directory of the release we want to deploy, in this case the "nginx-release" directory.
-2. Let's authenticate ourselves with the Director. To do this, first check our creds.yml to find pull the username (admin) and password. Then we can use the `bosh login` command using the username for the email prompt, and the password for the password.  After doing this we can log off. 
+2. If you have not already done so in Lab 0, we need to authenticate ourselves with the Director. To do this, first check our creds.yml to find pull the username (admin) and password. Then we can use the `bosh login` command using the username for the email prompt, and the password for the password.  After doing this we can log off. 
 3. Upload the release using BOSH’s `upload-release` command. Assuming we are in the release directory, no path is needed with the command.
 4. We can verify that the BOSH director knows about our release using the ‘releases’ command.
     
