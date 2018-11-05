@@ -36,7 +36,7 @@ Finally, we will need something easy to use as an example of how to package up a
 
 #### Initializing the Release 
 
-Now that we have a place to initialize our release, we can change to that directory and use BOSH’s `bosh init-release --git --dir <release-name>` command to make it happen! Be sure to use BOSH’s help (-h) flag to learn what arguments the BOSH commands might be expecting and what flags you might be able to use. I suggest that we include the --git option to make our target directory a git repository. Also, it is a best practice to use dashes in the release name. Use underscores for all other filenames.    
+Now that we have a place to initialize our release, we can change to that directory and use BOSH’s `bosh init-release --git --dir ${USER}-<release-name>` command to make it happen! Be sure to use BOSH’s help (-h) flag to learn what arguments the BOSH commands might be expecting and what flags you might be able to use. I suggest that we include the --git option to make our target directory a git repository. Also, it is a best practice to use dashes in the release name. Use underscores for all other filenames.    
 
 Congratulations! We have just successfully initialized our our BOSH release, let’s take a minute to look at the directory structure. This structure is the foundation for all BOSH releases and it is important that we understand the purpose of each file and folder. You can `cd` and `cat` out the folders and files to get more familiar with them (Note to future self, when we deploy our release, we will notice that this exact same folder structure also appears on the job VM in the var/vcap directory.)
 
