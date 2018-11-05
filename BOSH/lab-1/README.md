@@ -47,7 +47,7 @@ Congratulations! We have just successfully initialized our our BOSH release, let
 
 #### Adding Dependencies (blobs)
     
-[Download the nginx source code](http://nginx.org/en/download.html) and import it into BOSH as a blob. Use BOSH’s `bosh add-blob PATH=<path_to_blob> BLOB_PATH=<package_name>` command to attach the nginx tar file that we downloaded. Let’s use best practices and name the package_name ‘nginx.tar.gz.’
+[Download the nginx source code](http://nginx.org/en/download.html) and import it into BOSH as a blob. Use BOSH’s `bosh add-blob <path_to_blob> <package_name>` command to attach the nginx tar file that we downloaded. Let’s use best practices and name the package_name ‘nginx.tar.gz.’
     
 Since we acquired nginx from an untrusted source (the Internet), let’s use BOSH’s `blobs` command and BASH’s `shasum` command to compare the SHA and verify the integrity of the file.
     
