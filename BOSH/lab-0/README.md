@@ -92,15 +92,6 @@ If you add these commands to your ~/.bash_profile on the jumpbox you'll automati
 ### Bonus and Caution
 The bosh cli will also recognize the environment variable "BOSH_ENVIRONMENT". If you export this as well you will be able to run bosh commands without including "-e training". This can be a mixed blessing; when you work with multiple environments it could result in you running a command in the wrong place, but when working consistently with a single environment it will save time. Use with caution.
 
-
-## Architecture of a Release
-Recall that BOSH is designed to create a consistent, reliable, repeatable application deployment experience across diverse architecture and help eliminate the "it works on my machine" outcome. In order to accomplish this, a release needs to be able to package all of the dependencies that the application requires to run on a system, define the external resources the release depends on, and define the resource requirements associated with a given deployment.
-
-…
-
-Packages, Jobs (Tasks), source blobs
-
-
 ## Running a Local Director
 It is possible to run a BOSH director on your local system but the performance, consistency, and stability of this can depend on the type of system you use and its capabilities. Additionally, a local BOSH director using tools like bosh-lite and VirtualBox can become corrupted by system reboots, suspend, or hibernates.
 
