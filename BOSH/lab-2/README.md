@@ -11,7 +11,7 @@ Now that we have successfully used the BOSH CLI to codify the structure of all o
 
 For this lab, we have pre-provisioned a BOSH director for us to use so that we can stay focused on the mechanics of creating and deploying. In [Lab 0](../lab-0/README.md), we should have already configured the BOSH CLI by "sourcing" the provided environment file into our current shell. Let’s check and make sure our connection works, and we are targeting the correct director by running the `bosh -e training env` command.
 
-(note: since we have a preprovisions director, and we all have a release with the same name, the director will be confused.  we can fix this by updating the name of our release from nginx to something like nginx-<user_name> to avoid this collision.  Now we can upload our releases without any collisions.)
+(note: since we have a preprovisioned director, and we all have a release with the same name, the director will be confused.  we can fix this by updating the name of our release from nginx to something like nginx-<user_name> to avoid this collision.  Now we can upload our releases without any collisions.)
 
 #### Upload nginx release
 1. Make sure we are in the directory of the release we want to deploy, in this case the "nginx-release" directory.
