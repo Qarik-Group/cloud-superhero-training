@@ -110,7 +110,7 @@ popd
 cp nginx.conf ${BOSH_INSTALL_TARGET}/conf/
 ```
 
-We must edit our skeleton file to include this bash script. Note that each compilation step is surrounded by a `pushd` and `popd` pair distinguishes each step. Also, note that any copying, installing or compiling deposits the resulting code to the install target directory (the "BOSH_INSTALL_TARGET" environment variable)
+We must edit our skeleton file to include this bash script. Note that each compilation step is surrounded by a `pushd` and `popd` pair. Also, note that any copying, installing or compiling deposits the resulting code to the install target directory (the "BOSH_INSTALL_TARGET" environment variable)
     
 
 #### Jobs (describing the runtime configuration of your compiled binaries)
