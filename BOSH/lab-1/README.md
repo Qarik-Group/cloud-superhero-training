@@ -190,4 +190,4 @@ All of the elements needed to create our release should now be in place, so we c
 - The `--force` flag forces BOSH to use our local copies of our blobs. Without this, BOSH requires blobs to be uploaded before you run bosh create-release.
 - The `--tarball` flag specifies the name of the release file. In this case we should pass it "release.tgz". By using the --tarball flag, we can see that the BOSH CLI has created a .tgz file for us in the root of our release. This is useful for us so that we can inspect the release structure and contents of our completed release in it’s commonly shipped format.
 
-Lets move on to [Lab-2](../lab-2/README.MD)
+Lets move on to [Lab-2](../lab-2/README.md)
