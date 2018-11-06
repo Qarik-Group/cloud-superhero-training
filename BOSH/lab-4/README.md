@@ -12,7 +12,7 @@ At the completion of this lab the student will:
 ### Prerequisites
 * This lab assumes you have successfully completed the deployment of the nginx application described in [Lab-3](../lab-3/README.md).
 
-### Finding and Connecting to VMS
+### Finding and Connecting to VMs
 When investigating issues or failed deployments it is often useful to connect to the instances BOSH creates to manually run scripts or examine system logs.
 
 1. List the instances in the environment using the BOSH cli command `vms` resulting in an output like:
