@@ -1,26 +1,42 @@
-## Lab 1
+## Lab 5
 ### Objectives:
-At the completion of this lab the student will be able to answer the following questions:
+In this lab we'll pick up with the VM internals and dive deeper into the BOSH Director. At the conclusion of this lab the student will be able to:
 
-* hi there
-* and again
+* How health monitoring is used and how to take remedial action if required.
+* Describe the communication paths between the BOSH Director and Managed VMS.
+* Connect to the BOSH director and be familiar with the internal processes and services it uses to manage the environment.
 
-### Baby Steps with BOSH
+### Prerequisites:
+* This lab assumes you have completed [Lab-4](../lab-4/README.md) covering how to list and access your VMS as well as where to find the components deployed by BOSH
 
-## Activity
-The following lab is based on the material above and is designed to help you better understand the material presented. You will work independently for about 20 minutes and then discuss the solution as a group.
+### BOSH is So META
+The BOSH director itself is packaged and its VM is launched using a [bosh release](https://bosh.io/releases/github.com/cloudfoundry/bosh). Under normal operations, there is almost no need to access the Director via SSH but the "how-to" is important for **Operators** and it provides further understanding of the BOSH Internals.
 
-#### Command Reference
-If you are not familiar with a specific command, you can often obtain additional details about it by using `--help` or, in the case of a *NIX command `man [command]`. In this lab you may find the following commands helpful:
+In our lab deployment, our BOSH Director can be accessed through our jumpbox (often also called a Bastion host). The following command can be used to access our jumpbox:
 
-* cmd1
-* cmd2
+```bash
+ssh -i ~/.ssh/paas_master_key vcap@10.4.1.4
+```
 
-### Description
-In this activity we will blah blah blah and blah blah blah
+***Security Warning!*** normally this key would not be placed on a jumpbox where it is accessible to all users, this has been for this lab specifically to allow the student an opportunity to open the "Black Box" of the Director and explore its internals.
 
-1. this is item 1.
-2. this is item 2.
+### NATS
+[NATS](https://www.nats.io/), or Neural Autonomic Transport System (now you know why we just call it NATS), is a open source, high-performance messaging platform designed to be highly scalable. These features make it an excellent choice for building and managing cloud native distributed systems.
+
+The NATS message bus is used to manage communications between the various components that make up a BOSH deployment.
+
+### Health Monitor
+
+### Director
+
+### Cloud Provider Interface
+
+### Resurection
+
+### Blobstore
+
+### Tasks and Workers
 
 
-
+---
+**Outstanding** when you are ready you can move on to [Lab 6](../lab-6/README.md).
